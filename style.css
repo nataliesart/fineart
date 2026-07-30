@@ -909,3 +909,95 @@ nav ul {
 
 
 }
+/* ---------- Contact Page ---------- */
+
+
+.contact-page {
+
+    min-height:80vh;
+
+    padding:100px 15%;
+
+    text-align:center;
+
+    background:var(--cream);
+
+}
+
+
+
+.contact-page h1 {
+
+    font-size:4rem;
+
+    margin:25px 0;
+
+}
+
+
+
+.contact-page > p {
+
+    max-width:650px;
+
+    margin:0 auto 50px;
+
+}
+
+
+
+.contact-box {
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:80px;
+
+    margin-bottom:60px;
+
+}
+
+
+
+.contact-box h2 {
+
+    color:var(--deep-mauve);
+
+    font-size:2rem;
+
+}
+
+
+
+.contact-box p {
+
+    margin-top:10px;
+
+}
+
+
+
+
+
+@media(max-width:900px){
+
+
+.contact-page h1 {
+
+    font-size:3rem;
+
+}
+
+
+
+.contact-box {
+
+    flex-direction:column;
+
+    gap:30px;
+
+}
+
+
+}
