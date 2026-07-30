@@ -1001,3 +1001,17 @@ nav ul {
 
 
 }
+/* ---------- Luxury Paper Texture ---------- */
+
+
+body {
+
+    background-image:
+    radial-gradient(
+        rgba(199,160,90,.08) 1px,
+        transparent 1px
+    );
+
+    background-size:20px 20px;
+
+}
