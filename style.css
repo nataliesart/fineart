@@ -1,0 +1,415 @@
+/* =========================
+   NC STUDIO
+   Romantic Rococo Style
+========================= */
+
+
+/* ---------- Global ---------- */
+
+:root {
+    --cream: #F7EFE4;
+    --ivory: #FFF9F1;
+    --mauve: #B89AA6;
+    --deep-mauve: #8D6674;
+    --sage: #89977B;
+    --gold: #C7A05A;
+    --espresso: #3A2924;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background: var(--cream);
+    color: var(--espresso);
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+h1,
+h2,
+h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 500;
+}
+
+
+p {
+    line-height: 1.8;
+    font-size: 1rem;
+}
+
+
+
+
+/* ---------- Navigation ---------- */
+
+nav {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 35px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+}
+
+
+.logo {
+    color: white;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.2rem;
+    letter-spacing: 2px;
+}
+
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 35px;
+}
+
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: .9rem;
+    letter-spacing: 1px;
+    transition: .3s;
+}
+
+
+nav a:hover {
+    color: var(--gold);
+}
+
+
+
+
+
+/* ---------- Hero ---------- */
+
+.hero {
+
+    min-height: 100vh;
+
+    background:
+    linear-gradient(
+        rgba(58,41,36,.35),
+        rgba(58,41,36,.45)
+    ),
+    url("images/paintings/hero.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    color:white;
+
+}
+
+
+.hero-content {
+
+    max-width: 800px;
+    padding: 20px;
+
+}
+
+
+.small-title {
+
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-size: .9rem;
+    margin-bottom: 25px;
+
+}
+
+
+.hero h1 {
+
+    font-size: clamp(3rem, 6vw, 5rem);
+    line-height: 1;
+
+}
+
+
+.hero p {
+
+    margin: 30px auto;
+    max-width: 600px;
+
+}
+
+
+
+
+
+/* ---------- Buttons ---------- */
+
+.gold-button {
+
+    display:inline-block;
+
+    padding: 15px 40px;
+
+    border:1px solid var(--gold);
+
+    color:white;
+
+    text-decoration:none;
+
+    letter-spacing:2px;
+
+    transition:.3s;
+
+}
+
+
+.gold-button:hover {
+
+    background:var(--gold);
+    color:white;
+
+}
+
+
+
+
+
+/* ---------- Featured Gallery ---------- */
+
+.featured {
+
+    padding:100px 8%;
+    text-align:center;
+
+}
+
+
+.featured h2,
+.artist h2,
+.studio h2,
+.contact h2 {
+
+    font-size:3rem;
+
+}
+
+
+.divider {
+
+    width:80px;
+    height:1px;
+    background:var(--gold);
+    margin:25px auto 60px;
+
+}
+
+
+
+.art-grid {
+
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:40px;
+
+}
+
+
+
+.art-card {
+
+    background:var(--ivory);
+    padding-bottom:30px;
+
+}
+
+
+
+.art-card img {
+
+    width:100%;
+    height:450px;
+    object-fit:cover;
+
+}
+
+
+.art-card h3 {
+
+    margin-top:25px;
+    font-size:2rem;
+
+}
+
+
+.art-card p {
+
+    color:var(--deep-mauve);
+
+}
+
+
+
+
+
+/* ---------- Artist Section ---------- */
+
+.artist {
+
+    display:flex;
+    align-items:center;
+    gap:70px;
+
+    padding:100px 8%;
+
+    background:var(--mauve);
+
+    color:white;
+
+}
+
+
+
+.artist-image,
+.artist-text {
+
+    flex:1;
+
+}
+
+
+
+.artist-image img {
+
+    width:100%;
+    border-radius:2px;
+
+}
+
+
+.artist-text p {
+
+    margin-top:30px;
+
+}
+
+
+
+
+
+/* ---------- Studio ---------- */
+
+
+.studio {
+
+    padding:120px 8%;
+    text-align:center;
+
+    background:var(--sage);
+    color:white;
+
+}
+
+
+
+.studio p {
+
+    max-width:600px;
+    margin:30px auto;
+
+}
+
+
+
+
+
+/* ---------- Contact ---------- */
+
+
+.contact {
+
+    padding:100px 8%;
+    text-align:center;
+
+}
+
+
+
+
+
+/* ---------- Footer ---------- */
+
+footer {
+
+    padding:30px;
+    text-align:center;
+
+    background:var(--espresso);
+    color:white;
+
+}
+
+
+
+
+
+
+/* ---------- Mobile ---------- */
+
+@media(max-width:900px){
+
+
+nav {
+
+    flex-direction:column;
+    gap:20px;
+
+}
+
+
+nav ul {
+
+    gap:15px;
+    flex-wrap:wrap;
+    justify-content:center;
+
+}
+
+
+.art-grid {
+
+    grid-template-columns:1fr;
+
+}
+
+
+
+.artist {
+
+    flex-direction:column;
+
+}
+
+
+.hero h1 {
+
+    font-size:3rem;
+
+}
+
+
+}
