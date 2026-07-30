@@ -413,3 +413,44 @@ nav ul {
 
 
 }
+/* ---------- Elegant Fade Animations ---------- */
+
+
+.featured,
+.artist,
+.studio,
+.contact,
+.art-card {
+
+    opacity:0;
+    transform:translateY(30px);
+    transition:all 1s ease;
+
+}
+
+
+.show {
+
+    opacity:1;
+    transform:translateY(0);
+
+}
+
+
+/* Soft artwork hover */
+
+.art-card {
+
+    transition: transform .5s ease, box-shadow .5s ease;
+
+}
+
+
+.art-card:hover {
+
+    transform:translateY(-10px);
+
+    box-shadow:
+    0 20px 40px rgba(58,41,36,.15);
+
+}
