@@ -1034,38 +1034,37 @@ body {
     align-items:center;
 
 }
-/* ---------- Instagram Footer Icon ---------- */
-
-footer {
-
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    gap:15px;
-
-}
+/* ---------- Instagram Icon ---------- */
 
 
 .instagram-link {
 
-    width:40px;
-    height:40px;
+    width:42px;
+    height:42px;
 
     border:1px solid var(--gold);
 
     border-radius:50%;
 
     display:flex;
+
     align-items:center;
+
     justify-content:center;
 
     color:var(--gold);
 
-    text-decoration:none;
+    transition:.4s;
 
-    font-size:1.5rem;
+}
 
-    transition:.3s;
+
+.instagram-link svg {
+
+    width:22px;
+    height:22px;
+
+    fill:currentColor;
 
 }
 
@@ -1075,5 +1074,7 @@ footer {
     background:var(--gold);
 
     color:white;
+
+    transform:translateY(-3px);
 
 }
