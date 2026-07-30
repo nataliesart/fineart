@@ -1015,3 +1015,22 @@ body {
     background-size:20px 20px;
 
 }
+.logo {
+
+    font-style:italic;
+    letter-spacing:3px;
+
+}
+.simple-header nav {
+
+    position:relative;
+
+}
+
+
+.simple-header {
+
+    display:flex;
+    align-items:center;
+
+}
