@@ -99,12 +99,12 @@ nav a:hover {
 
     min-height: 100vh;
 
-    background:
-    linear-gradient(
-        rgba(58,41,36,.35),
-        rgba(58,41,36,.45)
-    ),
-    url("images/paintings/IMG_6697.jpeg");
+   background:
+linear-gradient(
+    rgba(35,25,20,.65),
+    rgba(35,25,20,.75)
+),
+url("images/paintings/IMG_6697.jpeg");
 
     background-size: cover;
     background-position: center;
