@@ -530,3 +530,93 @@ footer {
 
 
 }
+/* =========================
+   Gallery Style Feature
+========================= */
+
+
+.gallery-feature {
+
+    padding:140px 8%;
+
+    text-align:center;
+
+}
+
+
+
+.art-display {
+
+    max-width:1100px;
+
+    margin:auto;
+
+}
+
+
+
+.art-display img {
+
+    width:100%;
+
+    display:block;
+
+}
+
+
+
+.art-label {
+
+    max-width:600px;
+
+    margin:50px auto 0;
+
+}
+
+
+
+.art-label h3 {
+
+    font-size:3.5rem;
+
+    margin-bottom:15px;
+
+}
+
+
+
+.art-label .medium {
+
+    color:var(--gold);
+
+    letter-spacing:3px;
+
+    text-transform:uppercase;
+
+    font-size:.8rem;
+
+    margin-bottom:25px;
+
+}
+
+
+
+.art-label p {
+
+    margin-bottom:30px;
+
+}
+
+
+
+@media(max-width:900px){
+
+
+.art-label h3 {
+
+    font-size:2.5rem;
+
+}
+
+
+}
