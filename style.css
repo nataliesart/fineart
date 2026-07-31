@@ -238,19 +238,18 @@ a {
 
 .hero-overlay h1 {
 
-    font-size:clamp(4rem,8vw,7rem);
-
-    line-height:1;
+    display:none;
 
 }
 
 
 
+
+
 .hero-description {
 
-    max-width:500px;
+    display:none;
 
-    margin:35px auto;
 
 }
 
