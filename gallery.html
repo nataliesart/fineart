@@ -6,11 +6,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Gallery | NC Studio</title>
+<title>Works | Natalie Michelle</title>
 
 <link rel="stylesheet" href="style.css">
 
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
 
 </head>
 
@@ -18,153 +18,78 @@
 <body>
 
 
-<header class="page-header">
+<header class="simple-nav">
+
+<div class="signature">
+Natalie Michelle
+</div>
 
 
 <nav>
 
-<div class="logo">
-NC Studio
-</div>
-
-
-<ul>
-  <li><a href="index.html">Home</a></li>
-    <li><a href="about.html">Artist</a></li>
-     <li><a href="gallery.html">Paint</a></li>
-    <li><a href="studio.html">Studio</a></li>
-    <li><a href="contact.html">Contact</a></li>
-</ul>
+<a href="index.html">Home</a>
+<a href="gallery.html">Works</a>
+<a href="about.html">Artist</a>
+<a href="studio.html">Studio</a>
+<a href="contact.html">Contact</a>
 
 </nav>
-
-
-
-<div class="page-title">
-
-<h1>
-The Collection
-</h1>
-
-<p>
-Original works created through color, texture, and emotion.
-</p>
-
-</div>
-
 
 </header>
 
 
 
 
-<section class="collection">
+<main class="works-page">
 
 
-<div class="collection-category">
+<section class="works-intro">
 
-<h2>
-Dreaming Landscapes
-</h2>
-
-<div class="divider"></div>
-
-
-<div class="gallery-grid">
-
-
-<div class="gallery-piece">
-
-<img src="images/paintings/landscapes/landscape1.jpg">
-
-
-<h3>
-Whispering Meadows
-</h3>
-
-<p>
-Oil on Canvas • 2026
+<p class="eyebrow">
+Collections
 </p>
 
-<span>
-Available
-</span>
-
-
-</div>
-
-
-
-<div class="gallery-piece">
-
-<img src="images/paintings/landscapes/landscape2.jpg">
-
-
-<h3>
-Moonlit Garden
-</h3>
+<h1>
+Selected Works
+</h1>
 
 <p>
-Acrylic on Canvas • 2026
+A collection of paintings exploring nature, emotion, memory, and imagination.
 </p>
 
-<span>
-Private Collection
-</span>
-
-
-</div>
-
-
-</div>
-
-</div>
+</section>
 
 
 
 
 
-
-<div class="collection-category">
-
-
-<h2>
-Wild Hearts
-</h2>
+<section class="masonry-gallery">
 
 
-<div class="divider"></div>
+<div class="painting-card"
+onclick="openLightbox(
+'Ascent',
+'Oil on Canvas · 2026',
+'A memorial piece inspired by love, remembrance, and the connection between humans and animals.',
+'images/paintings/ascent.jpg'
+)">
 
-
-
-<div class="gallery-grid">
-
-
-<div class="gallery-piece">
-
-<img src="images/paintings/animals/animal1.jpg">
-
-
-<h3>
-Untitled
-</h3>
-
-
-<p>
-Oil on Canvas
-</p>
-
-
-<span>
-Available
-</span>
-
+<img src="images/paintings/ascent.jpg" alt="Ascent">
 
 </div>
 
 
-</div>
 
+
+<div class="painting-card tall"
+onclick="openLightbox(
+'Whispering Meadows',
+'Oil on Canvas · 2026',
+'A dreamlike landscape inspired by quiet moments in nature.',
+'images/paintings/whispering-meadows.jpg'
+)">
+
+<img src="images/paintings/whispering-meadows.jpg" alt="Whispering Meadows">
 
 </div>
 
@@ -172,53 +97,77 @@ Available
 
 
 
+<div class="painting-card"
+onclick="openLightbox(
+'Golden Hour',
+'Acrylic on Canvas · 2026',
+'A study of warmth, light, and atmosphere.',
+'images/paintings/golden-hour.jpg'
+)">
 
-<div class="collection-category">
-
-
-<h2>
-Romantic Portraits
-</h2>
-
-
-<div class="divider"></div>
-
-
-<div class="gallery-grid">
-
-
-<div class="gallery-piece">
-
-<img src="images/paintings/portraits/portrait1.jpg">
-
-
-<h3>
-Portrait Study
-</h3>
-
-
-<p>
-Oil on Canvas
-</p>
-
-
-<span>
-Available
-</span>
-
+<img src="images/paintings/golden-hour.jpg" alt="Golden Hour">
 
 </div>
 
 
+
+
+
+<div class="painting-card wide"
+onclick="openLightbox(
+'Dreamscape',
+'Oil on Canvas · 2026',
+'A world between reality and imagination.',
+'images/paintings/dreamscape.jpg'
+)">
+
+<img src="images/paintings/dreamscape.jpg" alt="Dreamscape">
+
 </div>
-
-
-</div>
-
 
 
 
 </section>
+
+
+</main>
+
+
+
+
+
+
+
+<div class="lightbox" id="lightbox">
+
+
+<button onclick="closeLightbox()">
+×
+</button>
+
+
+<div class="lightbox-content">
+
+
+<img id="lightbox-image">
+
+
+<div class="lightbox-info">
+
+
+<h2 id="lightbox-title"></h2>
+
+<p id="lightbox-medium"></p>
+
+<p id="lightbox-description"></p>
+
+
+</div>
+
+
+</div>
+
+</div>
 
 
 
@@ -227,18 +176,20 @@ Available
 <footer>
 
 <p>
-© 2026 NC Studio
+© 2026 Natalie Michelle
 </p>
 
-<a class="instagram-link" href="https://instagram.com/nataliecalart" target="_blank" aria-label="Instagram">
 
-<svg viewBox="0 0 24 24" aria-hidden="true">
-<path d="M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9a5.5 5.5 0 0 1-5.5 5.5h-9A5.5 5.5 0 0 1 2 16.5v-9A5.5 5.5 0 0 1 7.5 2zm0 2A3.5 3.5 0 0 0 4 7.5v9A3.5 3.5 0 0 0 7.5 20h9a3.5 3.5 0 0 0 3.5-3.5v-9A3.5 3.5 0 0 0 16.5 4h-9zm4.5 3a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm5.25-2.75a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5z"/>
-</svg>
+<a class="instagram-link" href="https://instagram.com/nataliecalart" target="_blank">
+
+Instagram
 
 </a>
 
+
 </footer>
+
+
 
 
 <script src="script.js"></script>
