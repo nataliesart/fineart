@@ -757,31 +757,8 @@ footer {
 
 }
 /* =========================
-   WORKS PAGE
+   Works Page
 ========================= */
-
-
-.simple-nav {
-
-padding:40px 8%;
-
-display:flex;
-
-justify-content:space-between;
-
-align-items:center;
-
-}
-
-
-.simple-nav nav {
-
-display:flex;
-
-gap:35px;
-
-}
-
 
 
 .works-page {
@@ -792,23 +769,11 @@ padding:80px 8%;
 
 
 
-.works-intro {
+.works-label {
 
 text-align:center;
 
-max-width:700px;
-
-margin:0 auto 100px;
-
-}
-
-
-
-.works-intro h1 {
-
-font-size:5rem;
-
-margin-bottom:30px;
+margin-bottom:80px;
 
 }
 
@@ -818,7 +783,7 @@ margin-bottom:30px;
 
 columns:3;
 
-column-gap:35px;
+column-gap:40px;
 
 }
 
@@ -828,7 +793,7 @@ column-gap:35px;
 
 break-inside:avoid;
 
-margin-bottom:35px;
+margin-bottom:40px;
 
 cursor:pointer;
 
@@ -844,7 +809,7 @@ width:100%;
 
 display:block;
 
-transition:.6s ease;
+transition:transform .6s ease;
 
 }
 
@@ -858,13 +823,13 @@ transform:scale(1.03);
 
 
 
-.tall {
+@media(max-width:900px){
+
+.masonry-gallery {
+
+columns:1;
 
 }
-
-
-
-.wide {
 
 }
 
