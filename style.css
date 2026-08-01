@@ -756,3 +756,236 @@ footer {
 
 
 }
+/* =========================
+   WORKS PAGE
+========================= */
+
+
+.simple-nav {
+
+padding:40px 8%;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+}
+
+
+.simple-nav nav {
+
+display:flex;
+
+gap:35px;
+
+}
+
+
+
+.works-page {
+
+padding:80px 8%;
+
+}
+
+
+
+.works-intro {
+
+text-align:center;
+
+max-width:700px;
+
+margin:0 auto 100px;
+
+}
+
+
+
+.works-intro h1 {
+
+font-size:5rem;
+
+margin-bottom:30px;
+
+}
+
+
+
+.masonry-gallery {
+
+columns:3;
+
+column-gap:35px;
+
+}
+
+
+
+.painting-card {
+
+break-inside:avoid;
+
+margin-bottom:35px;
+
+cursor:pointer;
+
+overflow:hidden;
+
+}
+
+
+
+.painting-card img {
+
+width:100%;
+
+display:block;
+
+transition:.6s ease;
+
+}
+
+
+
+.painting-card:hover img {
+
+transform:scale(1.03);
+
+}
+
+
+
+.tall {
+
+}
+
+
+
+.wide {
+
+}
+
+
+
+
+
+/* LIGHTBOX */
+
+
+.lightbox {
+
+position:fixed;
+
+inset:0;
+
+background:rgba(25,18,15,.92);
+
+display:none;
+
+align-items:center;
+
+justify-content:center;
+
+z-index:100;
+
+padding:40px;
+
+}
+
+
+
+.lightbox.active {
+
+display:flex;
+
+}
+
+
+
+.lightbox button {
+
+position:absolute;
+
+top:30px;
+
+right:40px;
+
+font-size:3rem;
+
+background:none;
+
+border:none;
+
+color:white;
+
+cursor:pointer;
+
+}
+
+
+
+.lightbox-content {
+
+max-width:1000px;
+
+text-align:center;
+
+color:white;
+
+}
+
+
+
+.lightbox-content img {
+
+max-height:75vh;
+
+max-width:100%;
+
+}
+
+
+
+.lightbox-info h2 {
+
+font-size:3rem;
+
+margin-top:30px;
+
+font-family:'Cormorant Garamond',serif;
+
+}
+
+
+
+.lightbox-info p {
+
+margin-top:15px;
+
+}
+
+
+
+
+
+@media(max-width:900px){
+
+
+.masonry-gallery {
+
+columns:1;
+
+}
+
+
+.works-intro h1 {
+
+font-size:3.5rem;
+
+}
+
+
+}
