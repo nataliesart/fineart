@@ -34,3 +34,24 @@ sections.forEach(section => {
     observer.observe(section);
 
 });
+function openLightbox(title, medium, description, image){
+
+document.getElementById("lightbox").classList.add("active");
+
+document.getElementById("lightbox-image").src=image;
+
+document.getElementById("lightbox-title").innerHTML=title;
+
+document.getElementById("lightbox-medium").innerHTML=medium;
+
+document.getElementById("lightbox-description").innerHTML=description;
+
+}
+
+
+
+function closeLightbox(){
+
+document.getElementById("lightbox").classList.remove("active");
+
+}
