@@ -956,27 +956,30 @@ font-size:3.5rem;
 }
 .gallery-banner {
 
-height:140px;
+    height: 230px;
 
-background:var(--mauve);
+    background: var(--mauve);
 
-display:flex;
-justify-content:center;
-align-items:center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-margin-bottom:80px;
+    margin-top: 50px;
+    margin-bottom: 90px;
 
 }
 
 
 .gallery-banner .eyebrow {
 
-color:var(--ivory);
+    color: var(--ivory);
 
-letter-spacing:5px;
+    letter-spacing: 6px;
 
-text-transform:uppercase;
+    text-transform: uppercase;
 
-font-size:.85rem;
+    font-size: .75rem;
+
+    margin: 0;
 
 }
