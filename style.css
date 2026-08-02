@@ -954,3 +954,25 @@ font-size:3.5rem;
 
 
 }
+.gallery-banner{
+    height:220px;
+
+    background:linear-gradient(
+        180deg,
+        #b497a3 0%,
+        #a88795 100%
+    );
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    margin-bottom:90px;
+}
+
+.gallery-banner h1{
+    color:white;
+    font-family:'Cormorant Garamond', serif;
+    font-size:3.8rem;
+    font-weight:400;
+}
