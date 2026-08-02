@@ -112,14 +112,10 @@ font-weight:400;
 
 
 .luxury-nav nav {
-
     display:flex;
-
+    align-items:center;
     gap:35px;
-
 }
-
-
 
 .luxury-nav nav a {
 
