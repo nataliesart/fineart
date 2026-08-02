@@ -444,7 +444,17 @@ footer {
 
 }
 
+footer p {
 
+    font-family:'Montserrat', sans-serif;
+
+    font-size:.75rem;
+
+    letter-spacing:3px;
+
+    text-transform:uppercase;
+
+}
 
 .instagram-link {
 
@@ -463,7 +473,8 @@ footer {
     justify-content:center;
 
     color:var(--gold);
-
+ margin-top:10px;
+    
 }
 
 
