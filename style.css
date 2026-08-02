@@ -140,7 +140,9 @@ font-weight:400;
     color:var(--gold);
 
 }
-
+.luxury-nav .dropdown-menu {
+    background:var(--ivory);
+}
 /* Interior Page Navigation */
 
 .gallery-nav {
@@ -1097,6 +1099,16 @@ font-size:3.5rem;
     visibility:visible;
 
 }
+
+.dropdown-menu {
+    box-shadow:0 15px 40px rgba(0,0,0,.15);
+}
+
+.dropdown-menu a {
+    color:var(--ink);
+}
+
+
 .artist-page {
 
 display:grid;
