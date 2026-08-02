@@ -141,7 +141,28 @@ font-weight:400;
 
 }
 
+/* Interior Page Navigation */
 
+.gallery-nav {
+    position:relative;
+    color:var(--ink);
+    background:var(--ivory);
+}
+
+
+.gallery-nav .signature {
+    color:var(--ink);
+}
+
+
+.gallery-nav nav a {
+    color:var(--ink);
+}
+
+
+.gallery-nav nav a:hover {
+    color:var(--gold);
+}
 
 /* =========================
  HERO
