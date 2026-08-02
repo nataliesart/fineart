@@ -983,3 +983,46 @@ font-size:3.5rem;
     margin: 0;
 
 }
+.dropdown {
+    position:relative;
+}
+
+
+.dropdown-menu {
+
+    position:absolute;
+
+    top:35px;
+    left:0;
+
+    background:var(--paper);
+
+    padding:20px 25px;
+
+    min-width:140px;
+
+    display:none;
+
+    flex-direction:column;
+
+    gap:18px;
+
+}
+
+
+.dropdown:hover .dropdown-menu {
+
+    display:flex;
+
+}
+
+
+.dropdown-menu a {
+
+    color:var(--ink);
+
+    font-size:.75rem;
+
+    letter-spacing:2px;
+
+}
