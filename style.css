@@ -578,7 +578,9 @@ footer p {
     font-size:3.5rem;
     margin-bottom:60px;
 }
-
+.gallery-feature > .minimal-link {
+    margin-top:60px;
+}
 .featured-gallery {
     display:grid;
     grid-template-columns:repeat(3, 1fr);
@@ -589,11 +591,13 @@ footer p {
 
 .featured-piece img {
     width:100%;
+    aspect-ratio: 4 / 5;
+    object-fit:cover;
     display:block;
 }
 
 .featured-piece {
-    text-align:left;
+    text-align:center;
 }
 
 .featured-piece h3 {
