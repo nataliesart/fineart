@@ -118,25 +118,15 @@ Instagram
 
 
 
-
-<a class="minimal-link" href="#">
-Send An Inquiry →
-</a>
-
-
-
 </section>
 
 
 
 <section class="contact-page">
 
-```
+
 <div class="contact-intro">
 
-    <p class="eyebrow">
-        Inquiries
-    </p>
 
     <h1>
         Let's Create Something Meaningful.
@@ -152,140 +142,236 @@ Send An Inquiry →
 
 <form class="inquiry-form"
       action="https://formsubmit.co/nataliecal313@gmail.com"
-      method="POST">
-
-    <input type="hidden" name="_subject" value="New Art Inquiry | Natalie Michelle">
-    <input type="hidden" name="_captcha" value="false">
-    <input type="hidden" name="_template" value="table">
-
-    <div class="form-row">
-
-        <div class="form-field">
-
-            <label for="name">Name</label>
-
-            <input
-                type="text"
-                id="name"
-                name="Name"
-                placeholder="Your name"
-                required>
-
-        </div>
+      method="POST"
+      enctype="multipart/form-data">
 
 
-        <div class="form-field">
+<input type="hidden" name="_subject" value="New Commission Inquiry | Natalie Michelle Art">
+<input type="hidden" name="_captcha" value="false">
+<input type="hidden" name="_template" value="table">
 
-            <label for="email">Email</label>
+<!-- NAME -->
 
-            <input
-                type="email"
-                id="email"
-                name="Email"
-                placeholder="Your email address"
-                required>
+<div class="form-field">
 
-        </div>
+    <label for="name">
+        Name
+    </label>
 
-    </div>
+    <input
+        type="text"
+        id="name"
+        name="Name"
+        placeholder="Your name"
+        required>
 
-
-    <div class="form-field">
-
-        <label for="inquiry-type">I'm interested in</label>
-
-        <select id="inquiry-type" name="Inquiry Type" required>
-
-            <option value="" disabled selected>
-                Select an option
-            </option>
-
-            <option value="Original Artwork">
-                Original Artwork
-            </option>
-
-            <option value="Custom Commission">
-                Custom Commission
-            </option>
-
-        </select>
-
-    </div>
+</div>
 
 
-    <div class="form-field">
+<!-- EMAIL -->
 
-        <label for="subject">
-            Subject / Commission Idea
+<div class="form-field">
+
+    <label for="email">
+        Email
+    </label>
+
+    <input
+        type="email"
+        id="email"
+        name="Email"
+        placeholder="Your email address"
+        required>
+
+</div>
+
+
+<!-- PHONE -->
+
+<div class="form-field">
+
+    <label for="phone">
+        Phone Number
+    </label>
+
+    <input
+        type="tel"
+        id="phone"
+        name="Phone Number"
+        placeholder="Your phone number">
+
+    <label class="checkbox-label">
+
+        <input
+            type="checkbox"
+            name="Phone Reply Requested"
+            value="Yes">
+
+        <span>
+            I'd like Natalie to reply by phone
+        </span>
+
+    </label>
+
+</div>
+
+
+<!-- SIZE -->
+
+<div class="form-field">
+
+    <label for="size">
+        Desired Size
+    </label>
+
+    <input
+        type="text"
+        id="size"
+        name="Desired Size"
+        placeholder="For example: 18 × 24 inches">
+
+</div>
+
+
+<!-- DEADLINE -->
+
+<div class="form-field">
+
+    <label for="deadline">
+        Is There a Deadline?
+    </label>
+
+    <input
+        type="text"
+        id="deadline"
+        name="Deadline"
+        placeholder="For example: December 15, 2026">
+
+</div>
+
+
+<!-- SUBJECT / IDEA / MATERIAL -->
+
+<div class="form-field">
+
+    <label for="idea">
+        Subject / Idea / Material
+    </label>
+
+    <textarea
+        id="idea"
+        name="Subject, Idea, Material"
+        rows="7"
+        placeholder="Tell me about the painting you'd like me to create. You can include the subject, your vision, preferred materials, colors, mood, or anything else you'd like me to know."
+        required></textarea>
+
+</div>
+
+
+<!-- REFERENCE IMAGE -->
+
+<div class="form-field">
+
+    <label for="reference">
+        Reference Image
+    </label>
+
+    <div class="file-upload">
+
+        <input
+            type="file"
+            id="reference"
+            name="Reference Image"
+            accept="image/jpeg,image/png,image/webp">
+
+        <label for="reference" class="file-upload-button">
+            Choose Image
         </label>
 
-        <textarea
-            id="subject"
-            name="Subject / Commission Idea"
-            rows="6"
-            placeholder="Tell me about the artwork you're looking for..."
-            required></textarea>
+        <span id="file-name">
+            No image selected
+        </span>
 
     </div>
 
+    <p class="upload-note">
+        Optional · JPG, PNG, or WEBP
+    </p>
 
-    <div class="form-row">
-
-        <div class="form-field">
-
-            <label for="size">
-                Desired Size
-            </label>
-
-            <input
-                type="text"
-                id="size"
-                name="Desired Size"
-                placeholder="For example: 18 × 24 in.">
-
-        </div>
+</div>
 
 
-        <div class="form-field">
+<!-- LOCATION -->
 
-            <label for="timeline">
-                Desired Timeline
-            </label>
+<div class="form-field">
 
-            <input
-                type="text"
-                id="timeline"
-                name="Desired Timeline"
-                placeholder="For example: December 2026">
+    <label for="location">
+        Location
+    </label>
 
-        </div>
+    <input
+        type="text"
+        id="location"
+        name="Location"
+        placeholder="City & State">
 
-    </div>
-
-
-    <div class="form-field">
-
-        <label for="details">
-            Additional Details
-        </label>
-
-        <textarea
-            id="details"
-            name="Additional Details"
-            rows="4"
-            placeholder="Anything else you'd like me to know?"></textarea>
-
-    </div>
+</div>
 
 
-    <button type="submit" class="gold-button">
-        Send Inquiry →
-    </button>
+<!-- HOW THEY FOUND YOU -->
+
+<div class="form-field">
+
+    <label for="heard">
+        How Did You Hear About Natalie Michelle Art?
+    </label>
+
+    <select
+        id="heard"
+        name="How They Heard About Natalie Michelle Art">
+
+        <option value="" disabled selected>
+            Select an option
+        </option>
+
+        <option value="Instagram">
+            Instagram
+        </option>
+
+        <option value="Etsy">
+            Etsy
+        </option>
+
+        <option value="Google">
+            Google
+        </option>
+
+        <option value="Friend or Family">
+            Friend or Family
+        </option>
+
+        <option value="Word of Mouth">
+            Word of Mouth
+        </option>
+
+        <option value="Other">
+            Other
+        </option>
+
+    </select>
+
+</div>
+
+
+<!-- SUBMIT -->
+
+<button type="submit" class="gold-button">
+    Send Commission Inquiry →
+</button>
+
 
 </form>
-```
 
-</section>
 
 
 
