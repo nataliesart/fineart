@@ -55,3 +55,19 @@ function closeLightbox(){
 document.getElementById("lightbox").classList.remove("active");
 
 }
+const referenceInput = document.getElementById("reference");
+const fileName = document.getElementById("file-name");
+
+if (referenceInput) {
+
+    referenceInput.addEventListener("change", function () {
+
+        if (this.files.length > 0) {
+            fileName.textContent = this.files[0].name;
+        } else {
+            fileName.textContent = "No image selected";
+        }
+
+    });
+
+}
