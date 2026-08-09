@@ -2068,71 +2068,47 @@ CONTACT CHAPTER
 }
 
 
-/* =========================
-   SOCIAL LINKS
-========================= */
-
-.site-footer .social-link {
-
-    display: flex !important;
-
-    flex-direction: row !important;
-
-    align-items: center !important;
-
-    gap: 12px !important;
-
-    width: auto !important;
-
-    height: auto !important;
-
-}
-
-
-/* ICON CIRCLES */
-
-.site-footer .social-icon {
-
-    width: 28px;
-
-    height: 28px;
-
-    min-width: 28px;
-
-    border: 1px solid var(--gold);
-
-    border-radius: 50%;
+.site-footer .footer-social {
 
     display: flex;
 
     align-items: center;
 
-    justify-content: center;
+    gap: 12px;
 
-    color: var(--gold);
+    color: var(--ivory);
 
     font-family: 'Montserrat', sans-serif;
 
-    font-size: .55rem;
+    font-size: .75rem;
 
-    letter-spacing: 0;
+    letter-spacing: 1px;
 
-    transition: all .3s ease;
-
+    transition: color .3s ease;
 }
 
+.site-footer .footer-social svg {
 
-/* HOVER */
+    width: 18px;
 
-.site-footer .social-link:hover .social-icon {
+    height: 18px;
 
-    background: var(--gold);
+    fill: var(--gold);
 
-    color: #2d221f;
+    flex-shrink: 0;
 
+    transition: .3s ease;
 }
 
+.site-footer .footer-social:hover {
 
+    color: var(--gold);
+}
+
+.site-footer .footer-social:hover svg {
+
+    fill: var(--gold);
+}
 /* =========================
    BOTTOM
 ========================= */
@@ -2212,4 +2188,11 @@ CONTACT CHAPTER
 
     }
 
+}
+.site-footer .footer-bottom {
+    gap: 80px;
+}
+
+.site-footer .back-to-top {
+    white-space: nowrap;
 }
