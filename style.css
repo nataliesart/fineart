@@ -1394,25 +1394,19 @@ SHOP PAGE
 ========================= */
 
 .shop-banner {
-height: 160px;
-background: var(--mauve);
-
-```
-display: flex;
-justify-content: center;
-align-items: center;
-
-margin-top: 50px;
-margin-bottom: 80px;
-```
-
+    background: var(--ivory);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 20px 40px;
+    margin: 0;
 }
 
 .shop-banner .eyebrow {
-color: var(--ivory);
-margin: 0;
-font-size: .9rem;
-letter-spacing: 7px;
+    color: var(--ink);
+    margin: 0;
+    font-size: .9rem;
+    letter-spacing: 7px;
 }
 
 .shop-page {
