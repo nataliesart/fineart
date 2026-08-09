@@ -1579,3 +1579,45 @@ padding-bottom: 6px;
         font-size:2.6rem;
     }
 }
+.year-navigation {
+    text-align: center;
+    padding: 0 8% 80px;
+}
+
+.year-navigation > p {
+    font-size: .7rem;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: var(--ink);
+    margin-bottom: 25px;
+}
+
+.year-links {
+    display: flex;
+    justify-content: center;
+    gap: 45px;
+}
+
+.year-links a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: .8rem;
+    letter-spacing: 3px;
+    color: var(--ink);
+    padding-bottom: 7px;
+    border-bottom: 1px solid transparent;
+    transition: .3s ease;
+}
+
+.year-links a:hover {
+    color: var(--gold);
+    border-bottom: 1px solid var(--gold);
+}
+
+@media(max-width: 600px) {
+
+    .year-links {
+        gap: 22px;
+        flex-wrap: wrap;
+    }
+
+}
