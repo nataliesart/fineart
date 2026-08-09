@@ -1621,3 +1621,53 @@ padding-bottom: 6px;
     }
 
 }
+/* =========================
+CONTACT CHAPTER
+========================= */
+
+.contact-chapter {
+
+    background: var(--emerald);
+    color: var(--ivory);
+
+    text-align: center;
+
+    padding: 140px 15%;
+
+}
+
+.contact-chapter h2 {
+
+    font-size: 4rem;
+
+    max-width: 850px;
+
+    margin: 30px auto;
+
+    line-height: 1.1;
+
+}
+
+.contact-chapter p:not(.eyebrow) {
+
+    max-width: 600px;
+
+    margin: 0 auto 35px;
+
+}
+
+.contact-chapter .minimal-link {
+
+    color: var(--ivory);
+
+}
+
+@media(max-width:900px){
+
+    .contact-chapter h2 {
+
+        font-size: 2.8rem;
+
+    }
+
+}
