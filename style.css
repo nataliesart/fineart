@@ -2196,3 +2196,131 @@ CONTACT CHAPTER
 .site-footer .back-to-top {
     white-space: nowrap;
 }
+/* =========================
+   ARTIST GALLERY
+========================= */
+
+.artist-gallery {
+
+    padding: 110px 8% 130px;
+
+    text-align: center;
+
+}
+
+.artist-gallery-intro {
+
+    max-width: 650px;
+
+    margin: 0 auto 70px;
+
+}
+
+.artist-gallery-intro h2 {
+
+    font-size: 3.5rem;
+
+    margin: 25px 0;
+
+}
+
+.artist-gallery-intro p:not(.eyebrow) {
+
+    font-size: .9rem;
+
+    line-height: 1.9;
+
+}
+
+
+/* GALLERY GRID */
+
+.artist-gallery-grid {
+
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 30px;
+
+    align-items: start;
+
+}
+
+.artist-gallery-item {
+
+    overflow: hidden;
+
+}
+
+.artist-gallery-item img {
+
+    width: 100%;
+
+    height: auto;
+
+    display: block;
+
+    transition: transform .6s ease;
+
+}
+
+.artist-gallery-item:hover img {
+
+    transform: scale(1.02);
+
+}
+
+
+/* MAKE THE FIRST IMAGE LARGER */
+
+.artist-gallery-item:first-child {
+
+    grid-column: span 2;
+
+    max-width: 600px;
+
+    width: 100%;
+
+    margin: 0 auto 20px;
+
+}
+
+
+/* MOBILE */
+
+@media(max-width:900px) {
+
+    .artist-gallery {
+
+        padding: 80px 8% 100px;
+
+    }
+
+    .artist-gallery-grid {
+
+        grid-template-columns: 1fr;
+
+        gap: 25px;
+
+    }
+
+    .artist-gallery-item:first-child {
+
+        grid-column: span 1;
+
+        max-width: 100%;
+
+    }
+
+    .artist-gallery-intro h2 {
+
+        font-size: 2.7rem;
+
+    }
+
+}
