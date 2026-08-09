@@ -2,7 +2,7 @@
 
     --ivory: #f8f1e7;
     --paper: #efe3d3;
-    --mauve: #b497a3;
+  --emerald: #17483F;
     --sage: #89947b;
     --gold: #c8a45d;
     --ink: #342823;
@@ -992,7 +992,7 @@ font-size:3.5rem;
 
     height: 230px;
 
-    background: var(--mauve);
+   background: var(--emerald);
 
     display: flex;
     justify-content: center;
@@ -1148,7 +1148,7 @@ margin-bottom:25px;
 
 .artist-statement {
 
-background:var(--mauve);
+background: var(--emerald);
 
 color:white;
 
