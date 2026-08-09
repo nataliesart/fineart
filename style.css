@@ -169,7 +169,8 @@ font-weight:400;
 
 .new-hero {
 
-    height:100vh;
+    height:65vh;
+     min-height:520px;
 
     position:relative;
 
