@@ -1156,88 +1156,7 @@ font-size:2.8rem;
 }
 
 }
-.contact-page {
 
-text-align:center;
-
-max-width:800px;
-
-margin:auto;
-
-padding:100px 20px 50px;
-
-}
-
-
-.contact-page h1 {
-
-font-size:4rem;
-
-margin:30px 0;
-
-}
-
-
-.contact-page > p:not(.eyebrow) {
-
-max-width:600px;
-
-margin:0 auto 60px;
-
-}
-
-
-
-.contact-box {
-
-display:flex;
-
-justify-content:center;
-
-gap:100px;
-
-margin-bottom:60px;
-
-}
-
-
-
-.contact-box h2 {
-
-font-size:2rem;
-
-margin-bottom:15px;
-
-}
-
-
-
-.contact-box p {
-
-letter-spacing:1px;
-
-}
-
-
-
-@media(max-width:700px){
-
-.contact-box {
-
-flex-direction:column;
-
-gap:40px;
-
-}
-
-
-.contact-page h1 {
-
-font-size:3rem;
-
-}
-
-}
 .studio-page {
 
 padding:150px 8%;
@@ -1684,7 +1603,7 @@ CONTACT CHAPTER
 .contact-intro {
     text-align: center;
     max-width: 750px;
-    margin: 0 auto 80px;
+    margin: 0 auto 35px;
 }
 
 .contact-intro h1 {
@@ -1705,7 +1624,7 @@ CONTACT CHAPTER
 
 .inquiry-form {
     max-width: 800px;
-    margin: 70px auto 0;
+    margin: 0 auto 0;
 }
 
 .form-field {
@@ -2376,4 +2295,20 @@ CONTACT CHAPTER
 
     color: var(--ink);
 
+}
+.contact-page {
+    max-width: 1000px;
+    margin: auto;
+    padding: 120px 8% 80px;
+}
+
+.contact-intro {
+    text-align: center;
+    max-width: 750px;
+    margin: 0 auto 35px;
+}
+
+.inquiry-form {
+    max-width: 800px;
+    margin: 0 auto;
 }
