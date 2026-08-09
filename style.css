@@ -1553,3 +1553,24 @@ padding-bottom: 6px;
 ```
 
 }
+.shop-cta {
+    text-align:center;
+    padding:100px 20px;
+    background:var(--emerald);
+    color:white;
+}
+
+.shop-cta h2 {
+    font-size:3.5rem;
+    margin:25px auto 35px;
+}
+
+.shop-cta .minimal-link {
+    color:white;
+}
+
+@media(max-width:900px) {
+    .shop-cta h2 {
+        font-size:2.6rem;
+    }
+}
