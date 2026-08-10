@@ -2312,3 +2312,8 @@ CONTACT CHAPTER
     max-width: 800px;
     margin: 0 auto;
 }
+.contact-note {
+    text-align: center;
+    max-width: 650px;
+    margin: 0 auto 30px;
+}
