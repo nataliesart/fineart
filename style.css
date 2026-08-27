@@ -1186,7 +1186,23 @@ margin:30px auto;
 
 
 }
+.artist-memory {
+    margin-top: 40px;
+}
 
+.artist-memory img {
+    width: 100%;
+    display: block;
+}
+
+.artist-memory p {
+    margin-top: 12px;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1rem;
+    font-style: italic;
+    line-height: 1.5;
+    opacity: .7;
+}
 @media(max-width:900px){
 
 .artist-page {
@@ -1226,23 +1242,7 @@ margin:30px auto;
     font-size:1.3rem;
 
 }
-.artist-memory {
-    margin-top: 40px;
-}
 
-.artist-memory img {
-    width: 100%;
-    display: block;
-}
-
-.artist-memory p {
-    margin-top: 12px;
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 1rem;
-    font-style: italic;
-    line-height: 1.5;
-    opacity: .7;
-}
 
 }
 
