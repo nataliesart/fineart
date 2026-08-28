@@ -1199,6 +1199,12 @@ margin:30px auto;
     line-height:1.5;
     font-weight:400;
 }
+.artist-links {
+    display:flex;
+    gap:35px;
+    margin-top:40px;
+    flex-wrap:wrap;
+}
 @media(max-width:900px){
 
 .artist-page {
